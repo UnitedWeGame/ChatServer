@@ -54,8 +54,8 @@ var server = http.createServer(function(request, response) {
    response.setHeader('Access-Control-Allow-Credentials', true);
 });
 
-server.listen(3000, function() {
-  console.log("Server listening on port 3000.");
+server.listen(process.env.PORT || 3000, function() {
+  console.log("Server listening on port " + process.env.PORT);
 });
 
 var chatServer = require('./lib/chat_server');
