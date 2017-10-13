@@ -1,0 +1,9 @@
+{
+  "name": "unitedwechat",
+  "version": "0.0.1",
+  "description": "Chat Server for United We Game",
+  "dependencies": {
+    "socket.io": "~0.9.6",
+     "mime": "~1.2.7"
+  }
+}
