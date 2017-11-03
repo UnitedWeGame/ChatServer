@@ -41,7 +41,7 @@ function serveStatic(response, cache, absPath) {
 
 var server = http.createServer(function(request, response) {
   // Website you wish to allow to connect
-   response.setHeader('Access-Control-Allow-Origin', 'http://localhost:3001');
+   response.setHeader('Access-Control-Allow-Origin', '*');
 
    // Request methods you wish to allow
    response.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
